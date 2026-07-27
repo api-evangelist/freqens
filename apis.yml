@@ -1,7 +1,24 @@
 aid: freqens
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freqens.png
 name: Freqens
-description: Freqens is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Freqens is an early-stage financial planning and analysis (FP&A) startup building software that helps
+  finance teams leave spreadsheets behind in the agentic era, giving CFOs and finance leaders a better way
+  to work with their numbers. Backed by Seedcamp, the company is currently in a private, invitation-only
+  phase, inviting a small initial group of CFOs and finance leaders. There is no public API, developer
+  portal, or documentation yet; this profile tracks the company for the API Evangelist network as it moves
+  toward a public product.
 url: https://raw.githubusercontent.com/api-evangelist/freqens/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Financial Planning and Analysis
+- FP&A
+- Finance
+- CFO
+- Fintech
+- Agentic AI
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/freqens-domain-security.yml
 - type: Website
   url: http://freqens.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
